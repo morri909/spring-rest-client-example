@@ -3,6 +3,7 @@ package com.spydrone.springrestclientexample.api.domain;
 import java.io.Serializable;
 
 public class Name implements Serializable {
+	private static final long serialVersionUID = -6874125491332520060L;
 	private String title;
 	private String first;
 	private String last;

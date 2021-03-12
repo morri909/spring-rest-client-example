@@ -3,6 +3,7 @@ package com.spydrone.springrestclientexample.api.domain;
 import java.io.Serializable;
 
 public class Location implements Serializable {
+	private static final long serialVersionUID = 9147780593450767360L;
 	private String street;
 	private String city;
 	private String state;
