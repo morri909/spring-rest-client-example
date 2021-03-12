@@ -4,31 +4,30 @@ import java.io.Serializable;
 
 public class User implements Serializable {
 	private static final long serialVersionUID = -644276452569471116L;
-	private String gender;
-	private Name name;
-	private Location location;
+	private String city;
+	private String name;
 
-	public String getGender() {
-		return gender;
+	public String getCity() {
+		return city;
 	}
 
-	public void setGender(String gender) {
-		this.gender = gender;
+	public void setCity(String city) {
+		this.city = city;
 	}
 
-	public Name getName() {
+	public String getName() {
 		return name;
 	}
 
-	public void setName(Name name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
-	public Location getLocation() {
-		return location;
-	}
-
-	public void setLocation(Location location) {
-		this.location = location;
+	@Override
+	public String toString() {
+		return "User{" +
+				"city='" + city + '\'' +
+				", name='" + name + '\'' +
+				'}';
 	}
 }
